@@ -47,7 +47,7 @@ En utilisant cette approche, j'ai pu afficher les événements de manière **res
 
 ### `Clone the project to your local machine`
 
-    git clone https://gitlab.com/exalt-it-dojo/candidats/ilyes-belfekih-frontjs-rendering-events.git
+    git clone https://github.com/Ilyes98/Rendering-events.git
 
 ### `Install the packages required`
 
