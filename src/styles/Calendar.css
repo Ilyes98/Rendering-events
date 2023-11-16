@@ -1,0 +1,90 @@
+.calendar {
+  position: relative;
+  height:100vh;
+  font-family: Arial, sans-serif;
+}
+
+.today {
+  font-size: 15px;
+  border: 1px solid black;
+  padding-left : 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.formatted-date {
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  float: left;
+}
+
+.time-slots-container {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 70px;
+  height: calc(100% - 50px);
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+
+.time-slot-item {
+  top: 50px;
+  height: calc((100% - 50px)/12);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 70px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.events-container {
+  position: absolute;
+  left: 70px;
+  top: 50px;
+  width: calc(100% - 70px);
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.event {
+  position: absolute;
+  background-color: #e9cacb;
+  color: #b06f71;
+  border-left: 2px solid #a4262c;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0px;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-time {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 9px;
+}
+
+@media (min-width: 280px) and (max-width: 280px) and (min-height: 653px) and (max-height: 653px) {
+  #current-date {
+    font-size: 13px;
+  }
+}
